@@ -6,11 +6,13 @@ def is_money(val):
     try:
         int(val)
         return int(val)
-    except:
+    except Exception as err:
+        print(err)
         try:
             float(val)
             return float(val)
-        except:
+        except Exception as err:
+            print(err)
             return -1
 
 while True:

@@ -11,5 +11,6 @@ while True:
                 res = tmp
         print(f"В числе {numstr} максимальная цифра {res}")
         break
-    except:
+    except Exception as err:
+        print(err)
         print("Вы ввели не число - попробуйте ввод снова. Программа не закончит работу, пока вы не введете целое число.")
