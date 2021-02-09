@@ -5,11 +5,11 @@ def is_money(val):
     try:
         int(val)
         return int(val)
-    except:
+    except Exception as err1:
         try:
             float(val)
             return float(val)
-        except:
+        except Exception as err2:
             return -1
 
 
