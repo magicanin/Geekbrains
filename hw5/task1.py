@@ -11,3 +11,4 @@ with open(file_name +".txt","a") as myfile:
             myfile.write(intut_str)
             myfile.write("\n")
 print("Работа программы завершена.")
+
